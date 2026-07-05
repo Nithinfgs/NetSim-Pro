@@ -1,0 +1,67 @@
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Neutral Light Mode Component Panel Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(15, 23, 42, 0.15);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* Active Flowing Cable Animation */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.cable-active {
+  stroke-dasharray: 5, 5;
+  animation: dash 1s linear infinite;
+}
+
+/* LED Port Link Indicator Blinking */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.led-blink {
+  animation: blink 1.2s infinite;
+}
+
+/* Glow Shadow for Active Components */
+.device-active {
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.25);
+}
+
+/* Light Mode Custom Scrollbar Setup */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.12);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 23, 42, 0.25);
+}
