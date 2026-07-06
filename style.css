@@ -1,23 +1,22 @@
 body {
-  background-color: #f8fafc;
-  color: #1e293b;
+  background-color: #111111;
+  color: #E5DFD5;
   font-family: 'Outfit', sans-serif;
   overflow-x: hidden;
   margin: 0;
 }
 
-/* Neutral Light Mode Component Panel Styles */
+/* Matte Obsidian & Clay Sand Panel Styles */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+  background: #1B1B1B;
+  border: 1px solid #2D2D2D;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .glass-panel-hover:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(15, 23, 42, 0.15);
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  background: #222222;
+  border-color: #3D3D3D;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Active Flowing Cable Animation */
@@ -42,26 +41,26 @@ body {
   animation: blink 1.2s infinite;
 }
 
-/* Glow Shadow for Active Components */
+/* Glow Shadow for Active Components (Slate Ocean Blue accent) */
 .device-active {
-  box-shadow: 0 0 15px rgba(14, 165, 233, 0.25);
+  box-shadow: 0 0 15px rgba(84, 133, 163, 0.35);
 }
 
-/* Light Mode Custom Scrollbar Setup */
+/* Dark Mode Scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.03);
+  background: #111111;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(15, 23, 42, 0.12);
+  background: #2D2D2D;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(15, 23, 42, 0.25);
+  background: #8C867E;
 }

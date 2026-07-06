@@ -6,6 +6,71 @@
   <title>NetSim Pro - Interactive Network Simulator</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS Custom Config Mapping -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            white: '#1B1B1B',        // Observability Card background
+            black: '#0A0A0A',        // Absolute Dark Console
+            slate: {
+              50: '#111111',         // Matte Obsidian Canvas Background
+              100: '#2D2D2D',        // Muted Border/Highlight
+              200: '#2D2D2D',        // Panel Borders
+              300: '#3D3D3D',
+              400: '#8C867E',
+              450: '#8C867E',
+              500: '#8C867E',        // Muted Secondary Text
+              600: '#8C867E',        // Secondary text
+              700: '#E5DFD5',        // Soft Clay Sand Text
+              800: '#E5DFD5',        // Soft Clay Sand Text
+              850: '#E5DFD5',
+              900: '#E5DFD5'
+            },
+            sky: {
+              50: '#1C3342',         // Deep Slate Blue background
+              100: '#1C3342',        // Deep Slate Blue background
+              500: '#5485A3',        // Slate Ocean Blue
+              600: '#5485A3',        // Slate Ocean Blue
+              700: '#47738f'
+            },
+            emerald: {
+              50: 'rgba(93, 142, 105, 0.15)', // Sage Green background
+              500: '#5D8E69',        // Sage Green indicator
+              600: '#5D8E69',
+              700: '#5D8E69'
+            },
+            amber: {
+              50: 'rgba(197, 138, 62, 0.15)', // Ochre Gold background
+              500: '#C58A3E',        // Ochre Gold warning
+              600: '#C58A3E'
+            },
+            red: {
+              50: 'rgba(212, 93, 67, 0.15)',  // Terracotta Red background
+              500: '#D45D43',        // Terracotta Red primary buttons
+              600: '#D45D43',        // Critical alerts
+              700: '#b84d35'
+            },
+            rose: {
+              50: 'rgba(212, 93, 67, 0.15)',
+              500: '#D45D43'
+            },
+            violet: {
+              50: 'rgba(197, 138, 62, 0.15)', // Ochre Gold background
+              500: '#C58A3E',        // OSPF solver highlights
+              600: '#a36d2a'
+            },
+            indigo: {
+              50: '#1C3342',         // Deep Slate Blue
+              500: '#5485A3',        // Slate Ocean Blue
+              600: '#47738f'
+            }
+          }
+        }
+      }
+    };
+  </script>
   <!-- Google Fonts Outfit & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +85,7 @@
   <!-- Babel Standalone to compile JSX in the browser -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body class="bg-slate-50 text-slate-700">
+<body class="bg-[#111111] text-[#E5DFD5]">
   <div id="root"></div>
 
   <!-- Standalone React Application Logic -->
